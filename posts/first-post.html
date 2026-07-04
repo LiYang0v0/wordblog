@@ -1,22 +1,29 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-lang="zh">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>第一篇博客 - LiYang 的博客</title>
+  <title>First Post - Yang (Aurelia) Li's Blog</title>
   <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-branding">
-      <h1 class="site-title"><a href="../index.html">LiYang 的博客</a></h1>
-      <p class="site-description">个人笔记、阅读，以及研究之外的生活观察。</p>
+      <h1 class="site-title"><a href="../index.html">Yang (Aurelia) Li's Blog</a></h1>
+      <p class="site-description">
+        <span data-lang="zh">無示無識，離諸問答</span>
+        <span data-lang="en" hidden>No showing, no knowing; beyond all questions and answers.</span>
+      </p>
+      <div class="language-tools">
+        <button class="language-toggle" type="button" data-lang-toggle>English</button>
+      </div>
     </div>
 
     <nav class="main-navigation" aria-label="主导航">
-      <a href="../index.html">主页</a>
-      <a href="../archive.html">文章目录</a>
-      <a href="../about.html">关于</a>
+      <a href="../index.html" data-i18n-zh="主页" data-i18n-en="Home">主页</a>
+      <a href="../archive.html" data-i18n-zh="文章目录" data-i18n-en="Archive">文章目录</a>
+      <a href="../about.html" data-i18n-zh="关于" data-i18n-en="About">关于</a>
     </nav>
   </header>
 
@@ -24,18 +31,27 @@
     <article class="post">
       <header class="entry-header">
         <p class="entry-date">2026-07-04</p>
-        <h2 class="entry-title">第一篇博客</h2>
+        <h2 class="entry-title">
+          <span data-lang="zh">第一篇博客</span>
+          <span data-lang="en" hidden>First Post</span>
+        </h2>
       </header>
 
       <div class="entry-content">
-        <p>这里是第一篇博客的正文。它不用很完整，也不用一开始就像正式文章。个人博客最好的地方，是可以先作为一个安静的地方存在。</p>
-        <p>之后你可以把读书笔记、研究之外的碎念、旅行、电影、播客、生活观察，都慢慢放进来。</p>
+        <div data-lang="zh">
+          <p>这里是第一篇博客的正文。它不用很完整，也不用一开始就像正式文章。个人博客最好的地方，是可以先作为一个安静的地方存在。</p>
+          <p>之后你可以把读书笔记、研究之外的碎念、旅行、电影、播客、生活观察，都慢慢放进来。</p>
+        </div>
+        <div data-lang="en" hidden>
+          <p>This is the body of the first post. It does not need to be complete, and it does not need to sound like a finished essay from the beginning. The best thing about a personal blog is that it can first exist as a quiet place.</p>
+          <p>Later, reading notes, stray thoughts outside research, travel, films, podcasts, and ordinary observations can slowly find their way here.</p>
+        </div>
       </div>
     </article>
   </main>
 
   <footer class="site-footer">
-    <p><a href="../archive.html">返回文章目录</a></p>
+    <p><a href="../archive.html" data-i18n-zh="返回文章目录" data-i18n-en="Back to archive">返回文章目录</a></p>
   </footer>
 </body>
 </html>

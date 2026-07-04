@@ -1,31 +1,44 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-lang="zh">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>文章目录 - LiYang 的博客</title>
+  <title>Archive - Yang (Aurelia) Li's Blog</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-branding">
-      <h1 class="site-title"><a href="index.html">LiYang 的博客</a></h1>
-      <p class="site-description">个人笔记、阅读，以及研究之外的生活观察。</p>
+      <h1 class="site-title"><a href="index.html">Yang (Aurelia) Li's Blog</a></h1>
+      <p class="site-description">
+        <span data-lang="zh">無示無識，離諸問答</span>
+        <span data-lang="en" hidden>No showing, no knowing; beyond all questions and answers.</span>
+      </p>
+      <div class="language-tools">
+        <button class="language-toggle" type="button" data-lang-toggle>English</button>
+      </div>
     </div>
 
     <nav class="main-navigation" aria-label="主导航">
-      <a href="index.html">主页</a>
-      <a href="archive.html" aria-current="page">文章目录</a>
-      <a href="about.html">关于</a>
+      <a href="index.html" data-i18n-zh="主页" data-i18n-en="Home">主页</a>
+      <a href="archive.html" aria-current="page" data-i18n-zh="文章目录" data-i18n-en="Archive">文章目录</a>
+      <a href="about.html" data-i18n-zh="关于" data-i18n-en="About">关于</a>
     </nav>
   </header>
 
   <main class="site-main page-content">
-    <h2>文章目录</h2>
+    <h2>
+      <span data-lang="zh">文章目录</span>
+      <span data-lang="en" hidden>Archive</span>
+    </h2>
     <ul class="archive-list">
       <li>
         <time datetime="2026-07-04">2026-07-04</time>
-        <a href="posts/first-post.html">第一篇博客</a>
+        <a href="posts/first-post.html">
+          <span data-lang="zh">第一篇博客</span>
+          <span data-lang="en" hidden>First Post</span>
+        </a>
       </li>
     </ul>
   </main>
